@@ -11,13 +11,13 @@ brew install starship
 ### Add config
 
 ```
-git clone git@github.com:nf1s/starship-config.git $HOME/.config/starship
+git clone git@github.com:nf1s/starship-config.git $HOME/.config/starship/config.d
 ```
 
 ### Add config to zsh at the end
 
 ```
-export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+export STARSHIP_CONFIG="$HOME/.config/starship/config.d/starship.toml"
 eval "$(starship init zsh)"
 ```
 
