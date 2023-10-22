@@ -25,7 +25,7 @@ format = '[${symbol}\(${context}\)](bold white)'
 disabled = false
 
 [kubernetes.context_aliases]
-"gke_(?P<var_organization>[\\w-]+)_(?P<var_region>[\\w-]+)_(?P<var_cluster>[\\w-]+)-cluster" = "$var_organization-$var_cluster"
+"gke_(?P<var_organization>[\\w-]+)_(?P<var_region>[\\w-]+)_(?P<var_cluster>[\\w-]+)-cluster" = "$var_organization--$var_cluster"
 
 [python]
 symbol = "🐍 "
