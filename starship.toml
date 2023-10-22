@@ -17,7 +17,7 @@ truncation_length = 3
 [character]
 success_symbol = "[➜](bold green) "
 error_symbol = "[✗](bold red) "
-vimcmd_symbol = "[ ](bold green)"
+vimcmd_symbol = "[ ](bold green)"
 
 [kubernetes]
 symbol = "☸️  "
@@ -25,8 +25,7 @@ format = '[${symbol}\(${context}\)](bold white)'
 disabled = false
 
 [kubernetes.context_aliases]
-"rancher-desktop" = "rancher"
-"gke_.*_(?P<var_cluster>[\\w-]+)-cluster" = "$var_cluster"
+"gke_(?P<var_organization>[\\w-]+)_(?P<var_region>[\\w-]+)_(?P<var_cluster>[\\w-]+)-cluster" = "$var_organization-$var_cluster"
 
 [python]
 symbol = "🐍 "
